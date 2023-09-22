@@ -9,6 +9,6 @@ interface CharacterApi {
     @GET("v1/public/characters?")
     suspend fun get(
         @Query("ts") ts: Long,
-        @Query("apyKey") apiKey: String
+        @Query("apiKey") apiKey: String
     ): CharacterResponse
 }
